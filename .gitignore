@@ -1,0 +1,12 @@
+env.txt
+.env
+__pycache__/
+saved_model_dir/
+*.csv
+org_vid_path_100/
+videos/
+*.log
+*.txt
+wandb/
+*.json
+attn_outputs/
