@@ -25,11 +25,6 @@ AUGS_MAP = {
 
 # Helper function to apply all three torchvision transforms
 def apply_torchvision_transformations(frame, angle_deg, brightness_factor, zoom_factor):
-    """
-    Use torchvision F.affine for rotation + zoom, and F.adjust_brightness for lighting.
-    Keeps the original frame size; zoom > 1.0 zooms in (may crop), zoom < 1.0 zooms out (pads).
-    """
-
     # Convert BGR to RGB then to PIL image
     img = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
 
