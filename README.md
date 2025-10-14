@@ -51,3 +51,6 @@ To visualize the attention of a model, get a file path to a saved model and inse
 ```bash
 python visualize-model-attn.py --model_name "path/to/your/saved/model"
 ```
+
+## Attention Evaluation
+To evaluate the .npy files with the human saliency maps, go to our [saliency map evaluation script](https://github.com/guidovalla/human_model_attention/blob/main/saliency_metrics_comparison/Salency_maps_evaluation.ipynb).
