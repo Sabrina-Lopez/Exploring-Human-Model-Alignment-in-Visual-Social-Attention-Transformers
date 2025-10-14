@@ -97,7 +97,7 @@ def timesformer_process_chunks_and_visualize(model, frames, video_path, image_pr
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--data_file", type=str, default="org_vid_path_100_test.csv")
-    parser.add_argument("--model_name", type=str, default="./saved_model_dir/facebook/timesformer-base-finetuned-k400-default-finetuned-org_vid_path_100_train-method-default-bs-4-k-1-hd-00-ad-00-lr-00001-wd-001-ls-03-sd-00_1760328853")
+    parser.add_argument("--model_name", type=str, required=True)
     parser.add_argument("--output_dir", type=str, default="./attn_outputs")
     parser.add_argument("--head_selection", type=str, default="mean", help="mean, max or head index")
     args = parser.parse_args()
