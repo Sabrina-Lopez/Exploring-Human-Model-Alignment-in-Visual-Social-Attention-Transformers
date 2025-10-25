@@ -9,8 +9,9 @@ wandb.login(key=os.environ.get("WANDB_API_KEY"))
 
 api = wandb.Api()
 
-train_project = "sabrinameganlopez015-live-robotics/October Fine-tuned Intent Classification Training"
-test_project = "sabrinameganlopez015-live-robotics/October Fine-tuned Intent Classification Testing"
+# REPLACE THESE VARIABLES WITH VALUES THAT MATCH YOUR TRAINING AND TESTING WANDB PROJECT PATHS
+train_project = "username/current-wandb-project-title-for-training"
+test_project = "username/current-wandb-project-title-for-testing"
 
 
 def extract_test_base_name(model_name):

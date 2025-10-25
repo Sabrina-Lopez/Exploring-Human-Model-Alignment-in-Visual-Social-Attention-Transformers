@@ -75,11 +75,7 @@ def main(args):
 
 
     dataset_type = os.path.splitext(args.data_file)[0]
-
-    name = None
-    prefix = 'test_data_'
-    substring = dataset_type[len(prefix):]
-    name = "times_" + substring
+    name = "times_"
 
     # Default as in the default fine-tuning
     if ("default" in args.model_name):
